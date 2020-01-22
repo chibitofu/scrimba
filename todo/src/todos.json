@@ -1,0 +1,12 @@
+{
+ "Todos" : [
+    {"id": 1, "completed": true, "task": "Do something"},
+    {"id": 2, "completed": false, "task": "Get Milk"},
+    {"id": 3, "completed": false, "task": "Buy Gas"},
+    {"id": 4, "completed": false, "task": "Apply to jobs"},
+    {"id": 5, "completed": false, "task": "Feed Cats"},
+    {"id": 6, "completed": true, "task": "Cook Dinner"},
+    {"id": 7, "completed": true, "task": "Clean desk"}
+ ]
+}
+
