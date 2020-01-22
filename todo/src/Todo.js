@@ -19,7 +19,7 @@ class Todo extends React.Component {
         return (
             <div>
                 <input type='checkbox' checked={todo.completed} onChange={() => {this.props.clickHandler(todo.id)}} />
-                <p style={this.state.clicked ? isChecked : null}>{this.props.todo.task}</p>
+                <p style={todo.completed ? isChecked : null}>{this.props.todo.task}</p>
             </div>
         )
     }
