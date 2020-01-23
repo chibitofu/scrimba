@@ -1,0 +1,17 @@
+.test {
+  text-align: center;
+}
+
+.test h1 {
+  background-color: midnightblue;
+  color: aliceblue;
+  border-radius: 10px 10px 0 0;
+  height: 50px;
+  font-size: larger;
+  padding-top: 10px;
+}
+
+.test p {
+  height: 100px;
+  background-color: azure;
+}

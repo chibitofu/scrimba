@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class Form extends React.Component {
     constructor() {
         super()
@@ -47,13 +48,15 @@ class Form extends React.Component {
         return (
             <div>
                 <form>
-                    <div>
-                        <label>First Name</label>
-                        <input type="text" name="firstName" value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} />
-                        <label>First Name</label>
+                    <div class="field">
+                        <label class="label">First Name</label>
+                        <div class="control">
+                            <input class="input" type="text" name="firstName" value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} />
+                        </div>
+                        <label class="label">Last Name</label>
                         <input type="text" name="lastName" value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} />
                     </div>
-                    <div>
+                    <div class="field">
                         <label>Age</label>
                         <input type="number" name="age" value={this.state.value} placeholder="Age" onChange={this.handleChange} />
                     </div>
