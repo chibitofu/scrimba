@@ -4,10 +4,26 @@ class Results extends React.Component {
     render() {
         let item = this.props.item
         return (
-            <div>
-                <h1>{item.title}</h1>
-                <img src={item.link} alt={item.title} />
-                <p>{item.description}</p>
+            <div className="column">
+                <div className="card">
+                    <div className="card-image">
+                        <figure className="image">
+                            <img src={item.link} alt={item.title} />
+                        </figure>
+                    </div>
+                    <div className="card-content">
+                        <p className="is-size-6">
+                            {item.title}
+                        </p>
+                        <p className="subtitle">
+                            {item.description}
+                        </p>
+                    </div>
+
+                    <div className="content">
+                        {item.link}
+                    </div>
+                </div>
             </div>
         )
     }

@@ -1,0 +1,7 @@
+.navbar {
+    background-color: tomato;
+}
+
+.navbar .navbar-item h1 {
+    color: whitesmoke;
+}

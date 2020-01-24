@@ -40,13 +40,24 @@ class Search extends React.Component {
 
         return (
             <div>
-            <form>
-                <label>Search For Images</label>
-                <br />
-                <input type="text" name="search" placeholder="Search" value={this.state.search} onChange={this.handleChange} />
-                <button name="searchButton" onClick={this.handleClick}>Search</button>
-            </form>
-                {results}
+                <div className="column is-full">
+                    <div className="field has-addons has-addons-centered">
+                        <div className="control">
+                            
+                            <input className="input" type="text" name="search" placeholder="Search" value={this.state.search} onChange={this.handleChange} />
+                        </div>
+                        <div className="control" >
+                            <a className="button is-primary" name="searchButton" onClick={this.handleClick}>
+                                Search
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="column is-full">
+                    <div className="columns is-multiline">
+                        {results}
+                    </div>
+                </div>   
             </div>
         )
     }
